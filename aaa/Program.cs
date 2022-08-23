@@ -1,10 +1,17 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+<PropertyGroup>
+   <LangVersion>Latest</LangVersion>
+</PropertyGroup>
 
 namespace aaa
 {
-    internal class Program
+     class Program
     {
         static void Main(string[] args)
         {
@@ -17,7 +24,7 @@ namespace aaa
             sehirler.Add("abc");
             sehirler.Add("def");
             sehirler.Add("ghi");
-            foreach (var sehir in sehirler)
+            foreach (string sehir in sehirler)
             {
                 Console.WriteLine(sehir);
             }
